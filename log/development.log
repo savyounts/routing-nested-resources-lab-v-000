@@ -1215,3 +1215,14 @@ Processing by SongsController#index as HTML
   [1m[35mSong Load (0.3ms)[0m  SELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = ?  [["artist_id", 4]]
   Rendered songs/index.html.erb within layouts/application (3.9ms)
 Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/6" for 97.118.157.210 at 2018-09-27 17:46:59 +0000
+Cannot render console from 97.118.157.210! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/savyounts/routing-nested-resources-lab-v-000/app/controllers/songs_controller.rb:15: syntax error, unexpected !=
+      != @song.artist.id 
+        ^):
+  app/controllers/songs_controller.rb:15: syntax error, unexpected !=
+
+
